@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas 1</title>
+        <!-- memanggil jquery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            // menuliskan function yang akan dijalankan
+            $(document).ready(function(){
+                // menyembunyikan foto1
+                $(".sembunyifoto1").click(function()
+                {$("#foto1").hide("slow") });
+                // menampilkan foto1
+                $(".tampilfoto1").click(function()
+                {$("#foto1").show("slow") });
+                // menyembunyikan foto2
+                $(".sembunyifoto2").click(function()
+                {$("#foto2").hide("slow") });
+                // menampilkanfoto2
+                $(".tampilfoto2").click(function()
+                {$("#foto2").show("slow") });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- button untuk menyembunyikan foto1 -->
+        <button class="sembunyifoto1">Sembunyikan</button>
+        <!-- button untuk menampilkan foto1 -->
+        <button class="tampilfoto1">Tampilkan</button>
+        <!-- menjelaskan dan menampilkan foto1 -->
+        <p><img id="foto1" src="upnjatim.gif"></p>
+
+        <!-- button untuk menyembunyikan foto2 -->
+        <button class="sembunyifoto2">Sembunyikan</button>
+        <!-- button untuk menyembunyikan foto2 -->
+        <button class="tampilfoto2">Tampilkan</button>
+        <!-- menjelaskan dan menampilkan foto2 -->
+        <p><img id="foto2" src="himasifo.jpg"></p>
+    </body>
+</html>
